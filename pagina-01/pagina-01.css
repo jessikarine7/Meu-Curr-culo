@@ -1,0 +1,25 @@
+@font-face {
+    font-family: zen-lith;
+    src: url(../fonts/Zen_Kaku_Gothic_Antique/Zen-Light.ttf);
+}
+
+.menu{
+    background-color: #9192e615;
+    font-family: zen-lith;
+    font-size: 10px;
+    color: #202161;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+#nome {
+    font-size: 18px;
+}
+
+/* -----imagem----- */
+
+#img{
+    width: 30%;
+    right: 20%;
+}
