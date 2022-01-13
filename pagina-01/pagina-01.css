@@ -1,25 +1,117 @@
 @font-face {
+    font-family: roboto-fino;
+    src: url(../fonts/Roboto/Roboto-Thin.ttf);
+}
+
+@font-face {
     font-family: roboto-lith;
     src: url(../fonts/Roboto/Roboto-Light.ttf);
 }
 
+@font-face {
+    font-family: mavim-r;
+    src: url(../fonts/Maven_Pro/MavenPro-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* -----menu----- */
+
 .menu{
-    background-color: #9192e615;
-    font-family: roboto-lith;
+    padding: 3%;
+    background-color: #221bde0c;
+    font-family: roboto-fino;
     font-size: 10px;
-    color: #202161;
+    color: #0E0B5E;
     display: flex;
     align-items: center;
     justify-content:space-evenly;
 }
 
-#nome {
-    font-size: 18px;
+.nome1 {
+    margin-right: 250px;
+    font-family: roboto-lith;
+    font-size: 25px;
 }
 
-/* -----imagem----- */
+/* -----container----- */
 
-#img{
-    width: 30%;
-    right: 20%;
+.container1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.container2 {
+    background-color: white;
+    position: absolute;
+    display: flex;
+    width: 60%;
+    height: 90%;
+}
+
+.container3 {
+    display: flex;
+    flex-direction: column;
+    align-items:stretch;
+    justify-content:space-evenly;
+    margin-left: 8%;
+    width: 100%;
+    height: 70%;
+}
+
+
+/* -----imagens----- */
+
+#img1 {
+    width: 100%;
+}
+
+#img2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 330px;
+    height: 410px; 
+}
+
+/* -----texto----- */
+
+.identificacao{
+    line-height: 32px;
+    color: #0E0B5E;
+    font-family: roboto-lith;
+}
+
+#funcao{
+    font-family: mavim-r;
+    font-size: 15px;
+}
+
+.nome2 {
+    font-family:mavim-r;
+    font-size: 30px;
+}
+
+.contato{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.tipo-contato{
+    font-family:mavim-r;
+    font-size: 15px;
+    color: #0E0B5E;
+}
+
+.infomacao{
+    font-family: roboto-fino;
+    font-size: 15px;
+    color: #0E0B5E;
+    margin-bottom: 5%;
 }
