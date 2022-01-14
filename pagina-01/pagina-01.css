@@ -13,6 +13,8 @@
     src: url(../fonts/Maven_Pro/MavenPro-Regular.ttf);
 }
 
+/* -----geral----- */
+
 * {
     margin: 0;
     padding: 0;
@@ -21,20 +23,33 @@
 /* -----menu----- */
 
 .menu{
-    padding: 3%;
-    background-color: #221bde0c;
-    font-family: roboto-fino;
     font-size: 10px;
+    padding: 3%;
     color: #0E0B5E;
+    background-color: #d7dbbf23;
+    font-family: roboto-fino;
     display: flex;
     align-items: center;
     justify-content:space-evenly;
+    cursor: pointer;
 }
 
 .nome1 {
-    margin-right: 250px;
-    font-family: roboto-lith;
     font-size: 25px;
+    margin-right: 250px;
+    font-family: mavim-r;
+    cursor: none;
+}
+
+/* -----animação menu----- */
+
+.menu .conteudo {
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+}
+.menu .conteudo:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 /* -----container----- */
@@ -43,25 +58,28 @@
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items:center;
+    flex-direction: column;
 }
 
 .container2 {
+    width: 50%;
+    height: 78%;
+    margin-top: 1%;
     background-color: white;
     position: absolute;
     display: flex;
-    width: 60%;
-    height: 90%;
+
 }
 
 .container3 {
+    margin-left: 8%;
+    width: 100%;
+    height: 70%;
     display: flex;
     flex-direction: column;
     align-items:stretch;
     justify-content:space-evenly;
-    margin-left: 8%;
-    width: 100%;
-    height: 70%;
 }
 
 
@@ -72,29 +90,36 @@
 }
 
 #img2{
+    width:100%;
+    height: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 330px;
-    height: 410px; 
+}
+
+.self {
+    width: 100%;
+    height: 100%; 
 }
 
 /* -----texto----- */
 
 .identificacao{
+    margin-top: 32%;
     line-height: 32px;
     color: #0E0B5E;
     font-family: roboto-lith;
 }
 
 #funcao{
-    font-family: mavim-r;
     font-size: 15px;
+    margin-bottom: 8%;
+    font-family: mavim-r;
 }
 
 .nome2 {
-    font-family:mavim-r;
     font-size: 30px;
+    font-family:mavim-r;
 }
 
 .contato{
@@ -104,14 +129,147 @@
 }
 
 .tipo-contato{
-    font-family:mavim-r;
-    font-size: 15px;
+    font-size: 20px;
     color: #0E0B5E;
+    font-family:mavim-r;
 }
 
 .infomacao{
-    font-family: roboto-fino;
-    font-size: 15px;
-    color: #0E0B5E;
+    font-size: 18px;
     margin-bottom: 5%;
+    color: #0E0B5E;
+    font-family: roboto-fino;
+}
+
+/* ---------links-------- */
+
+.links{
+    width: 48%;
+    padding: 1%;
+    background-color: #0E0B5E;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon{
+    width: 20px;
+    margin-right: 20px;
+}
+
+/* ----responsividade---- */
+
+@media (max-width: 1500px) {
+    
+    .nome2{
+        font-size: 25px;
+    }
+
+    #funcao{
+        font-size: 10px;
+    }
+
+    .tipo-contato{
+        font-size: 15px;
+    }
+    
+    .infomacao{
+        font-size: 13px;
+    }
+    
+}
+
+@media (max-width: 1200px) {
+    
+    .nome2{
+        font-size: 20px;
+    }
+
+    #funcao{
+        font-size: 10px;
+    }
+
+    .tipo-contato{
+        font-size: 14px;
+    }
+    
+    .infomacao{
+        font-size: 12px;
+    }
+    
+}
+
+@media (max-width: 1000px) {
+
+    .menu{
+        font-size: 8px;
+    }
+    .nome1{
+        font-size: 17px;
+    }
+    
+    .nome2{
+        margin-top: 8px;
+        font-size: 17px;
+    }
+
+    #funcao{
+        font-size: 10px;
+    }
+
+    .tipo-contato{
+        font-size: 11px;
+    }
+    
+    .infomacao{
+        font-size: 10px;
+    }
+    
+}
+
+@media (max-width: 850px) {
+    
+    .nome2{
+        font-size: 15px;
+    }
+
+    #funcao{
+        font-size: 10px;
+    }
+
+    .tipo-contato{
+        font-size: 11px;
+    }
+    
+    .infomacao{
+        font-size: 10px;
+    }
+    
+    .menu{
+        display: none;
+    }
+}
+
+@media (max-width: 750px) {
+
+    #img1{
+        display: none;
+    }
+
+    #img2{
+        width: 60%;
+        margin-top: 20px;
+        border-radius: 10px;
+    }
+    
+    .container2{
+        position: relative;
+        flex-wrap: wrap;
+    }
+
+    .contato{
+        margin-bottom: 20px;
+    }
+
 }
