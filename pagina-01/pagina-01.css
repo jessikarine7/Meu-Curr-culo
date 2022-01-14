@@ -65,8 +65,8 @@
 .container2 {
     width: 50%;
     height: 78%;
-    margin-top: 1%;
-    background-color: white;
+    margin-top: 2%;
+    background-color: #e5e5e5;
     position: absolute;
     display: flex;
 
@@ -160,6 +160,8 @@
 
 /* ----responsividade---- */
 
+
+
 @media (max-width: 1500px) {
     
     .nome2{
@@ -181,7 +183,7 @@
 }
 
 @media (max-width: 1200px) {
-    
+ 
     .nome2{
         font-size: 20px;
     }
@@ -258,8 +260,8 @@
     }
 
     #img2{
-        width: 60%;
-        margin-top: 20px;
+        width: 40%;
+        margin-top: 50px;
         border-radius: 10px;
     }
     
@@ -268,8 +270,13 @@
         flex-wrap: wrap;
     }
 
+    .container3{
+        margin:0px;
+        align-items: center;
+    }
+
     .contato{
-        margin-bottom: 20px;
+        margin-bottom: 90px;
     }
 
 }
